@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ag
+  namespace: test-abdullah
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ag
+  template:
+    metadata:
+      labels:
+        app: ag
+    spec:
+      containers:
+      - name: ag
+        image: abdullahalmariah/auction-gateway:latest
+        imagePullPolicy: Always
+        env:
+        - name: REDIS_HOST
+          value: "redis-cluster"
+        - name: REDIS_APPLOVIN_HOST
+          value: "redis-cluster"
+        - name: REDIS_QPS_HOST
+          value: "redis-cluster"
+        - name: REDIS_CRITEO_HOST
+          value: "redis-cluster"
+        - name: APPLICATION_SECRET
+          value: "APPLICATION_SECRET"
+        - name: EU_ENDPOINTS
+          value: "localhost"
+        - name: US_ENDPOINTS
+          value: "localhost"
+        - name: KAFKA_BROKERS
+          value: "kafka-0:29092,kafka-1:29092,kafka-2:29092"
+        - name: KAFKA_BID_REQUESTS_TOPIC
+          value: bid_requests
+        - name: KAFKA_BIDS_TOPIC
+          value: bids
+        - name: KAFKA_ADNETWORK_BIDS_TOPIC
+          value: adnetwork_bids
+        - name: KAFKA_ADNETWORK_REQUEST_TOPIC
+          value: adnetwork_request
+        - name: LAGOM_LOCATOR_NAME
+          value: "k8s"
+        - name: NAMESPACE
+          value: "test-abdullah"

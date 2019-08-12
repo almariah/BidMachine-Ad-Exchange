@@ -595,6 +595,93 @@ $VIDEO_CREATIVE_TYPE_VAST_WRAPPER_4_1
 !VIDEO_PLACEMENT_TYPE_INTERSTITIALB4
 io.bidmachine.protobuf.adcomB
 AdcomProtoP¢ADCOMbproto3
+Õ
+$bidmachine/protobuf/extensions.protobidmachine.protobuf%bidmachine/protobuf/adcom/adcom.protogoogle/protobuf/any.proto"∆
+RequestExtension
+	seller_id (	RsellerIdV
+seller_data (25.bidmachine.protobuf.RequestExtension.SellerDataEntryR
+sellerData=
+SellerDataEntry
+key (	Rkey
+value (	Rvalue:8"Ω
+PlacementExtension"
+ad_space_id (	BR	adSpaceIdM
+cache (27.bidmachine.protobuf.PlacementExtension.CachedPlacementRcache≥
+CachedPlacement9
+api (2'.bidmachine.protobuf.adcom.ApiFrameworkRapi%
+price_estimate (RpriceEstimate[
+tokens (2C.bidmachine.protobuf.PlacementExtension.CachedPlacement.TokensEntryRtokens&
+ext (2.google.protobuf.AnyRext9
+TokensEntry
+key (	Rkey
+value (	Rvalue:8"∆
+AdExtensionD
+tokens (2,.bidmachine.protobuf.AdExtension.TokensEntryRtokens
+preload (Rpreload
+
+skip_after (R	skipAfter<
+viewability_time_threshold (RviewabilityTimeThreshold>
+viewability_pixel_threshold (RviewabilityPixelThresholdD
+viewability_duration_threshold (RviewabilityDurationThreshold9
+event (2#.bidmachine.protobuf.adcom.Ad.EventRevent9
+TokensEntry
+key (	Rkey
+value (	Rvalue:8*Ã
+EventTypeExtended
+EVENT_TYPE_EXTENDED_INVALID 
+EVENT_TYPE_EXTENDED_LOADEDÙ#
+EVENT_TYPE_EXTENDED_IMPRESSIONı!
+EVENT_TYPE_EXTENDED_VIEWABLEˆ
+EVENT_TYPE_EXTENDED_CLICK˜
+EVENT_TYPE_EXTENDED_CLOSED¯"
+EVENT_TYPE_EXTENDED_DESTROYED˘$
+EVENT_TYPE_EXTENDED_INIT_LOADED˙'
+"EVENT_TYPE_EXTENDED_REQUEST_LOADED˚)
+$EVENT_TYPE_EXTENDED_REQUEST_CANCELED¸ 
+EVENT_TYPE_EXTENDED_STARTEDÿ'
+"EVENT_TYPE_EXTENDED_FIRST_QUARTILEŸ!
+EVENT_TYPE_EXTENDED_MIDPOINT⁄'
+"EVENT_TYPE_EXTENDED_THIRD_QUARTILE⁄"
+EVENT_TYPE_EXTENDED_COMPLETED€
+EVENT_TYPE_EXTENDED_ERRORË'
+"EVENT_TYPE_EXTENDED_TRACKING_ERRORÈ!
+EVENT_TYPE_EXTENDED_FILLÙ#
+EVENT_TYPE_EXTENDED_FINISHˆ*Ø
+
+ActionType
+ACTION_TYPE_TYPE_INVALID 
+ACTION_TYPE_LOADINGÙ
+ACTION_TYPE_SHOWINGı
+ACTION_TYPE_VIEWINGˆ
+ACTION_TYPE_CLICKING˜
+ACTION_TYPE_CLOSING¯
+ACTION_TYPE_DESTROYING˘
+ACTION_TYPE_INITIALIZING˙ 
+ACTION_TYPE_REQUEST_LOADING˚"
+ACTION_TYPE_REQUEST_CANCELING¸*˝
+ErrorReason
+ERROR_REASON_INVALID 
+ERROR_REASON_NO_CONNECTIONd
+ERROR_REASON_BAD_CONTENTe
+ERROR_REASON_TIMEOUTf
+ERROR_REASON_NO_CONTENTg"
+ERROR_REASON_HANDLED_EXCEPTIONh
+ERROR_REASON_WAS_CLOSEDi
+ERROR_REASON_WAS_DESTROYEDj
+ERROR_REASON_WAS_EXPIREDk
+ERROR_REASON_INTERNALl"
+ERROR_REASON_HTTP_SERVER_ERRORm!
+ERROR_REASON_HTTP_BAD_REQUESTn*ø
+ApiFrameworkExtended"
+API_FRAMEWORK_EXTENDED_INVALID $
+API_FRAMEWORK_EXTENDED_ADCOLONYÙ$
+API_FRAMEWORK_EXTENDED_APPLOVIN˛"
+API_FRAMEWORK_EXTENDED_SMAATOà"
+API_FRAMEWORK_EXTENDED_VUNGLEí$
+API_FRAMEWORK_EXTENDED_MYTARGETú"
+API_FRAMEWORK_EXTENDED_TAPJOY¶%
+ API_FRAMEWORK_EXTENDED_PUBNATIVE∞B1
+io.bidmachine.protobufBExtensionsProtoP¢BDMbproto3
 Å
 bidmachine/protobuf/init.protobidmachine.protobuf%bidmachine/protobuf/adcom/adcom.proto"Ü
 InitRequest
@@ -762,90 +849,3 @@ LossReason
 0LOSS_REASON_CREATIVE_FILTERED_ANIMATION_TOO_LONG”6
 1LOSS_REASON_CREATIVE_FILTERED_NOT_ALLOWED_IN_DEAL‘B7
 io.bidmachine.protobuf.openrtbBOpenrtbProtoP¢ORTBbproto3
-Õ
-$bidmachine/protobuf/extensions.protobidmachine.protobuf%bidmachine/protobuf/adcom/adcom.protogoogle/protobuf/any.proto"∆
-RequestExtension
-	seller_id (	RsellerIdV
-seller_data (25.bidmachine.protobuf.RequestExtension.SellerDataEntryR
-sellerData=
-SellerDataEntry
-key (	Rkey
-value (	Rvalue:8"Ω
-PlacementExtension"
-ad_space_id (	BR	adSpaceIdM
-cache (27.bidmachine.protobuf.PlacementExtension.CachedPlacementRcache≥
-CachedPlacement9
-api (2'.bidmachine.protobuf.adcom.ApiFrameworkRapi%
-price_estimate (RpriceEstimate[
-tokens (2C.bidmachine.protobuf.PlacementExtension.CachedPlacement.TokensEntryRtokens&
-ext (2.google.protobuf.AnyRext9
-TokensEntry
-key (	Rkey
-value (	Rvalue:8"∆
-AdExtensionD
-tokens (2,.bidmachine.protobuf.AdExtension.TokensEntryRtokens
-preload (Rpreload
-
-skip_after (R	skipAfter<
-viewability_time_threshold (RviewabilityTimeThreshold>
-viewability_pixel_threshold (RviewabilityPixelThresholdD
-viewability_duration_threshold (RviewabilityDurationThreshold9
-event (2#.bidmachine.protobuf.adcom.Ad.EventRevent9
-TokensEntry
-key (	Rkey
-value (	Rvalue:8*Ã
-EventTypeExtended
-EVENT_TYPE_EXTENDED_INVALID 
-EVENT_TYPE_EXTENDED_LOADEDÙ#
-EVENT_TYPE_EXTENDED_IMPRESSIONı!
-EVENT_TYPE_EXTENDED_VIEWABLEˆ
-EVENT_TYPE_EXTENDED_CLICK˜
-EVENT_TYPE_EXTENDED_CLOSED¯"
-EVENT_TYPE_EXTENDED_DESTROYED˘$
-EVENT_TYPE_EXTENDED_INIT_LOADED˙'
-"EVENT_TYPE_EXTENDED_REQUEST_LOADED˚)
-$EVENT_TYPE_EXTENDED_REQUEST_CANCELED¸ 
-EVENT_TYPE_EXTENDED_STARTEDÿ'
-"EVENT_TYPE_EXTENDED_FIRST_QUARTILEŸ!
-EVENT_TYPE_EXTENDED_MIDPOINT⁄'
-"EVENT_TYPE_EXTENDED_THIRD_QUARTILE⁄"
-EVENT_TYPE_EXTENDED_COMPLETED€
-EVENT_TYPE_EXTENDED_ERRORË'
-"EVENT_TYPE_EXTENDED_TRACKING_ERRORÈ!
-EVENT_TYPE_EXTENDED_FILLÙ#
-EVENT_TYPE_EXTENDED_FINISHˆ*Ø
-
-ActionType
-ACTION_TYPE_TYPE_INVALID 
-ACTION_TYPE_LOADINGÙ
-ACTION_TYPE_SHOWINGı
-ACTION_TYPE_VIEWINGˆ
-ACTION_TYPE_CLICKING˜
-ACTION_TYPE_CLOSING¯
-ACTION_TYPE_DESTROYING˘
-ACTION_TYPE_INITIALIZING˙ 
-ACTION_TYPE_REQUEST_LOADING˚"
-ACTION_TYPE_REQUEST_CANCELING¸*˝
-ErrorReason
-ERROR_REASON_INVALID 
-ERROR_REASON_NO_CONNECTIONd
-ERROR_REASON_BAD_CONTENTe
-ERROR_REASON_TIMEOUTf
-ERROR_REASON_NO_CONTENTg"
-ERROR_REASON_HANDLED_EXCEPTIONh
-ERROR_REASON_WAS_CLOSEDi
-ERROR_REASON_WAS_DESTROYEDj
-ERROR_REASON_WAS_EXPIREDk
-ERROR_REASON_INTERNALl"
-ERROR_REASON_HTTP_SERVER_ERRORm!
-ERROR_REASON_HTTP_BAD_REQUESTn*ø
-ApiFrameworkExtended"
-API_FRAMEWORK_EXTENDED_INVALID $
-API_FRAMEWORK_EXTENDED_ADCOLONYÙ$
-API_FRAMEWORK_EXTENDED_APPLOVIN˛"
-API_FRAMEWORK_EXTENDED_SMAATOà"
-API_FRAMEWORK_EXTENDED_VUNGLEí$
-API_FRAMEWORK_EXTENDED_MYTARGETú"
-API_FRAMEWORK_EXTENDED_TAPJOY¶%
- API_FRAMEWORK_EXTENDED_PUBNATIVE∞B1
-io.bidmachine.protobufBExtensionsProtoP¢BDMbproto3

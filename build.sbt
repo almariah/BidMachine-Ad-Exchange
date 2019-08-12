@@ -12,7 +12,7 @@ resolvers in ThisBuild ++= Seq(
   "Typesafe Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/",
   "Atlassian Releases" at "https://maven.atlassian.com/public/",
   Resolver.bintrayRepo("cakesolutions", "maven"),
-  "Artifactory" at "http://jfrog.appodealx.com/artifactory/sbt-dev/"
+  "Artifactory" at "https://mvnrepository.com/"
 )
 
 libraryDependencies in ThisBuild += compilerPlugin("org.spire-math" %% "kind-projector"     % "0.9.7")
@@ -89,7 +89,7 @@ lazy val `scalapb-runtime-protobuf` = "com.thesamet.scalapb" %% "scalapb-runtime
 lazy val `google-protobuf`          = "com.google.protobuf"  % "protobuf-java"    % "3.6.1"
 
 // Cache
-lazy val `scalacache-version` = "0.26.1-SNAPSHOT"
+lazy val `scalacache-version` = "0.27.0"
 
 lazy val `scalacache-core`     = "com.github.cb372" %% "scalacache-core"     % `scalacache-version`
 lazy val `scalacache-monix`    = "com.github.cb372" %% "scalacache-monix"    % `scalacache-version`
@@ -175,7 +175,7 @@ lazy val `druid-service-api` = (project in file("src/druid-service-api"))
   .enablePlugins(LagomScala)
   .dependsOn(common, `settings-service-api`)
   .settings(
-    libraryDependencies += "io.swagger" %% "swagger-play2" % "1.6.1-SNAPSHOT",
+    libraryDependencies += "io.swagger" %% "swagger-play2" % "1.7.1",
     libraryDependencies += lagomScaladslApi
   )
 
@@ -211,7 +211,7 @@ lazy val `api-gateway` = (project in file("src/api-gateway"))
     libraryDependencies += cats,
     libraryDependencies ++= Seq(`circe-core`, `play-circe`),
     libraryDependencies += macwire,
-    libraryDependencies += "io.swagger"  %% "swagger-play2" % "1.6.1-SNAPSHOT",
+    libraryDependencies += "io.swagger"  %% "swagger-play2" % "1.7.1",
     libraryDependencies += "org.webjars" % "swagger-ui"     % "3.2.2",
     libraryDependencies ++= Seq(`play-silhouette`,
                                 `play-silhouette-password-bcrypt`,
