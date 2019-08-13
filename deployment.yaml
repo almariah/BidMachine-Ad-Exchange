@@ -42,7 +42,69 @@ spec:
           value: adnetwork_bids
         - name: KAFKA_ADNETWORK_REQUEST_TOPIC
           value: adnetwork_request
+        - name: KAFKA_DEBUG_BID_REQUEST_TOPIC
+          value: debug_bid_request
         - name: LAGOM_LOCATOR_NAME
           value: "k8s"
         - name: NAMESPACE
           value: "test-abdullah"
+        - name: MARKETPLACES_BY_SELLER
+          value: "test1:open"
+        - name: ADNETWORK_PUBMATIC_RTB_PUBLISHER_ID
+          value: "test1"
+        - name: ADNETWORK_PUBMATIC_RTB_ENABLED_APPS
+          value: "test"
+        - name: ADNETWORK_PUBMATIC_PB_PUBLISHER_ID
+          value: "test1"
+        - name: ADNETWORK_PUBMATIC_PB_ENABLED_APPS
+          value: "test"       
+        - name: ADNETWORK_RUBICON_BANNER_ZONE_300_250
+          value: "12"
+        - name: ADNETWORK_RUBICON_BANNER_ZONE_320_50
+          value: "12"
+        - name: ADNETWORK_RUBICON_BANNER_ZONE_320_480
+          value: "12"
+        - name: ADNETWORK_RUBICON_BANNER_ZONE_480_320
+          value: "12"
+        - name: ADNETWORK_RUBICON_BANNER_ZONE_728_90
+          value: "12"
+        - name: ADNETWORK_RUBICON_BANNER_ZONE_768_1024
+          value: "12"
+        - name: ADNETWORK_RUBICON_BANNER_ZONE_1024_768
+          value: "22"
+        - name: ADNETWORK_CRITEO_ZONE_320_50
+          value: "22"
+        - name: ADNETWORK_CRITEO_ZONE_728_90
+          value: "22"
+        - name: ADNETWORK_CRITEO_ZONE_320_480
+          value: "22"
+        - name: ADNETWORK_CRITEO_ZONE_480_320
+          value: "22"
+        - name: ADNETWORK_CRITEO_ZONE_768_1024
+          value: "22"
+        - name: ADNETWORK_CRITEO_ZONE_1024_768
+          value: "22"
+        - name: ADNETWORK_CRITEO_RU_ZONE_320_50
+          value: "22"
+        - name: ADNETWORK_CRITEO_RU_ZONE_480_320
+          value: "22"
+        - name: ADNETWORK_CRITEO_RU_ZONE_320_480
+          value: "22"
+        - name: ADNETWORK_CRITEO_RU_ZONE_1024_768
+          value: "22"
+        - name: ADNETWORK_CRITEO_RU_ZONE_768_1024
+          value: "22"
+        - name: ADNETWORK_CRITEO_RU_ZONE_728_90
+          value: "22"
+        - name: ADNETWORK_CRITEO_US_ZONE_320_50
+          value: "22"
+        - name: ADNETWORK_CRITEO_US_ZONE_728_90
+          value: "22"
+        - name: ADNETWORK_CRITEO_US_ZONE_320_480
+          value: "22"
+        - name: ADNETWORK_CRITEO_US_ZONE_480_320
+          value: "22"
+        - name: ADNETWORK_CRITEO_US_ZONE_768_1024
+          value: "22"
+        - name: ADNETWORK_CRITEO_US_ZONE_1024_768
+          value: "22"
