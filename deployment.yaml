@@ -147,3 +147,47 @@ spec:
           value: "pass"
         - name: ENV
           value: prod
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-gateway
+  namespace: test-abdullah
+spec:
+  ports:
+  - port: 9000
+    protocol: TCP
+    targetPort: 9000
+  selector:
+    app: api-gateway
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-gateway
+  namespace: test-abdullah
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-gateway
+  template:
+    metadata:
+      labels:
+        app: api-gateway
+    spec:
+      containers:
+      - name: api-gateway
+        image: abdullahalmariah/api-gateway:latest
+        imagePullPolicy: Always
+        env:
+        - name: APPLICATION_SECRET
+          value: "APPLICATION_SECRET"
+        - name: LAGOM_LOCATOR_NAME
+          value: "k8s"
+        - name: NAMESPACE
+          value: "test-abdullah"
+        - name: DATABASE_URL
+          value: "jdbc:postgresql://postgres/default?user=postgres&password=yTXP12OMTXM07LCs"
+        - name: ENV
+          value: prod
