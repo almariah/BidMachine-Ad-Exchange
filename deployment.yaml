@@ -108,3 +108,42 @@ spec:
           value: "22"
         - name: ADNETWORK_CRITEO_US_ZONE_1024_768
           value: "22"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ss
+  namespace: test-abdullah
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ss
+  template:
+    metadata:
+      labels:
+        app: ss
+    spec:
+      containers:
+      - name: ss
+        image: abdullahalmariah/settings-service:latest
+        imagePullPolicy: Always
+        env:
+        - name: APPLICATION_SECRET
+          value: "APPLICATION_SECRET"
+        - name: LAGOM_LOCATOR_NAME
+          value: "k8s"
+        - name: NAMESPACE
+          value: "test-abdullah"
+        - name: DATABASE_URL_BUYER
+          value: "jdbc:postgresql://postgres/buyer?user=postgres&password=yTXP12OMTXM07LCs"
+        - name: DATABASE_URL_SELLER
+          value: "jdbc:postgresql://postgres/seller?user=postgres&password=yTXP12OMTXM07LCs"
+        - name: EXTERNAL_DOMAIN
+          value: "example.com"
+        - name: EXTERNAL_USER
+          value: "user"
+        - name: EXTERNAL_PASS
+          value: "pass"
+        - name: ENV
+          value: prod
